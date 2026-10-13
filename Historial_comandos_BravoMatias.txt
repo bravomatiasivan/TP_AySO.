@@ -120,3 +120,22 @@ history -a
 cp /home/vagrant/.bash_history ./Historial_comandos_< Bravo Matias >.txt
 cp /home/vagrant/.bash_history ./Historial_comandos_<BravoMatias>.txt
 cp /home/vagrant/.bash_history ./Historial_comandos_BravoMatias.txt
+cat Historial_comandos_BravoMatias.txt
+git add .
+git status
+git commit script_dir.sh "ADD: Añadiendo script"
+git commit -m script_dir.sh "ADD: Añadiendo script"
+git restore --staged script_dir.sh
+git status
+git add .
+git status
+git restore --staged Historial_comandos_BravoMatias.txt
+git status
+git commit -m "ADD: Añadiendo script"
+git push
+git add .
+git status
+git commit -m "ADD: Añadiendo historial de comandos"
+git push
+ls -la
+
