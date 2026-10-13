@@ -1,0 +1,122 @@
+ssh-keygen
+ls -la
+cd .ssh
+ls -la
+cat id_rsa.pub 
+cd
+mkdir repogit_TP
+cd repogit_TP/
+git clone git@github.com:bravomatiasivan/TP_AySO..git
+ls -la
+cd TP_AySO./
+ls -l
+pwd
+man grep
+grep -i Vagrant /etc/shadow
+sudo grep -i Vagrant /etc/shadow
+sudo grep -i Vagrant /etc/shadow | awk -F ":" '{print$2}'
+sudo grep -i Vagrant /etc/shadow | awk -F ":" '{print$2}' > pass_usuario.txt
+cat pass_usuario.txt 
+whoami
+echo "usuario=$(whoami)"
+echo "usuario = $(whoami)" >> pass_usuario.txt 
+cat pass_usuario.txt 
+ls -la
+git add .
+git status
+git commit -m "ADD: agregado ejercicio 2"
+git config --global user.email "bravomatiasivan@gmail.com"
+git config --global user.name "Bravo Matias"
+git commit -m "ADD: agregado ejercicio 2"
+git status
+git push
+ls -la /home/vagrant
+ls -la /home/vagrant > permisos.txt
+ls -l
+cat permisos.txt 
+echo "ls -la /home/vagrant > permisos.text" >> permisos.txt 
+cat permisos.txt 
+git add .
+git status
+git commir -m "ADD: Añadiendo archivo permisos"
+git commit -m "ADD: Añadiendo archivo permisos"
+git push
+man grep
+sudo cat /etc/passwd
+sudo grep -v root: /etc/passwd
+sudo grep -v root: /etc/passwd | head -n 10
+sudo grep -v root: /etc/passwd | head -n 10 | awk -F ":" '{print$1}'
+sudo grep -v root: /etc/passwd | head -n 10 | awk -F ":" '{print$1}' > lista_ordenada.txt
+ls -l
+cat lista_ordenada.txt 
+git add .
+git status
+git commit -m "ADD: Listado de usuarios ordenada"
+git push
+la -la
+cat README.md 
+echo "Alumno: <Bravo Matias>" >> README.md 
+cat README.md 
+git restore README.md
+cat << FIN >> README.md 
+
+Alumno: < Bravo Matias >
+Division: < 111 >
+Turno: < añana
+FIN
+
+git restore README.md
+cat << FIN >> README.md 
+
+Alumno: < Bravo Matias >
+Division: < 111 >
+Turno: < Mañana >
+FIN
+
+cat README.md 
+git add .
+git status
+git commit -m "docs: agregando informacion del alumno"
+git push
+cd
+mkdir -p universidad/ {alumnos/legajos{1..15}, profesores/legajos{1..5}}
+ls -la
+cd profesores/
+ls -l
+cd
+cd universidad/
+ls -l
+cd
+rm -rf profesores/
+rm -rf universidad/
+rm -rf \{alumnos/
+ls -la
+mkdir -p universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+ls -la
+cd universidad/
+ls -l
+cd
+sudo snap tree
+sudo snap install tree
+tree universidad/
+cd repogit_TP/TP_AySO./
+cat << FIN >> script_dir.sh
+mkdir -p universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+FIN
+
+ls -la
+chmod +x script_dir.sh 
+ls -la
+add .
+git add .
+man cp
+histoty -a
+history -a
+cp /home/vagrant/.bash_history "Historial_comandos_<Tu-ApellidoNombre>.txt"
+ls -la
+rm -rf Historial_comandos_\<Tu-ApellidoNombre\>.txt 
+ls -la
+history -a 
+cp /home/vagrant/.bash_history ./Historial_comandos_< Bravo Matias >.txt
+cp /home/vagrant/.bash_history ./Historial_comandos_<BravoMatias>.txt
+cp /home/vagrant/.bash_history ./Historial_comandos_BravoMatias.txt
